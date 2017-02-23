@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>取色板插件</title>
+
+    <link  href="style/layout.css" rel="stylesheet" type="text/css" />
+    <link  href="style/themes.css" rel="stylesheet" type="text/css" />
+    <link  href="style/master.css" rel="stylesheet" type="text/css" />
+
+    <link   href="style/color-picker-new.css" rel="stylesheet" type="text/css" /><!--取色板CSS文件-->
+    <link  href="style/color-default.css" rel="stylesheet" type="text/css" /><!--取色板CSS文件-->
+
+</head>
+<body>
+<div class="panel margin-t">
+    <header class="panel-heading">
+        色板插件
+    </header>
+    <div class="panel-body">
+        <form data-abide="">
+            <div class="row margin-t">
+                <div class="small-12columns">
+                    <!-- 取色板-->
+                    <div class="colorpicker-div">
+                        <input type="text" class="callback-color-picker" readonly="" />
+                        <div class="tab-rec-1 color-picker-box">
+                            <div class="tab clearfix no-margin">
+                                <ul class="clearfix" id="datatable_tab">
+                                    <li class="on">
+                                        <div class="tl">
+                                            <div class="tr">
+                                                <div class="tc "><a class="color-sma-1"></a></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tl">
+                                            <div class="tr">
+                                                <div class="tc "><a class="color-sma-2"></a></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tl">
+                                            <div class="tr">
+                                                <div class="tc "><a class="color-sma-3"></a></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tl">
+                                            <div class="tr">
+                                                <div class="tc "><a class="color-sma-4"></a></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tl">
+                                            <div class="tr">
+                                                <div class="tc "><a class="color-sma-5"></a></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tl">
+                                            <div class="tr">
+                                                <div class="tc "><a class="color-sma-6"></a></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tl">
+                                            <div class="tr">
+                                                <div class="tc "><a class="color-sma-7"></a></div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="modcon clearfix ">
+                                <div id="data_dttab_con_1" class="clearfix">
+                                    <div class="device-colorpicker">
+                                        <div class="swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="color-choice-box-1">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="color-choice-box-2">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="color-choice-box-3">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="color-choice-box-4">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="color-choice-box-5">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="arrow-left" href="#">＜</a>
+                                        <a class="arrow-right" href="#">></a>
+                                        <div class="pagination1 pagin"></div>
+                                    </div>
+                                </div>
+                                <div id="data_dttab_con_2" style="display:none;">
+                                    <div class="device-colorpicker">
+                                        <a class="arrow-left" href="#">＜</a>
+                                        <a class="arrow-right" href="#">></a>
+                                        <div class="swiper-container-1">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="color-choice-box-6">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="color-choice-box-7">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="color-choice-box-8">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="color-choice-box-9">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="color-choice-box-10">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pagination2 pagin"></div>
+                                    </div>
+                                </div>
+                                <div id="data_dttab_con_3" style="display: none;">
+                                    <div class="device-colorpicker">
+                                        <a class="arrow-left" href="#">＜</a>
+                                        <a class="arrow-right" href="#">></a>
+                                        <div class="swiper-container-2">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="color-choice-box-11">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="color-choice-box-12">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="color-choice-box-13">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="color-choice-box-14">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="color-choice-box-15">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pagination3 pagin"></div>
+                                    </div>
+                                </div>
+                                <div id="data_dttab_con_4" style="display: none;">
+                                    <div class="device-colorpicker">
+                                        <a class="arrow-left" href="#">＜</a>
+                                        <a class="arrow-right" href="#">></a>
+                                        <div class="swiper-container-3">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="color-choice-box-16">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="color-choice-box-17">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="color-choice-box-18">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="color-choice-box-19">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="color-choice-box-20">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pagination4 pagin"></div>
+                                    </div>
+                                </div>
+                                <div id="data_dttab_con_5" style="display: none;">
+                                    <div class="device-colorpicker">
+                                        <a class="arrow-left" href="#">＜</a>
+                                        <a class="arrow-right" href="#">></a>
+                                        <div class="swiper-container-4">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="color-choice-box-21">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="color-choice-box-22">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="color-choice-box-23">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="color-choice-box-24">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="color-choice-box-25">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pagination5 pagin"></div>
+                                    </div>
+                                </div>
+                                <div id="data_dttab_con_6" style="display: none;">
+                                    <div class="device-colorpicker">
+                                        <!--<a class="arrow-left" href="#">＜</a>-->
+                                        <!--<a class="arrow-right" href="#">></a>-->
+                                        <div class="swiper-container-5">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="color-choice-box-26">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pagination6 pagin"></div>
+                                    </div>
+                                </div>
+                                <div id="data_dttab_con_7" style="display: none;">
+                                    <div class="colorPicker-put"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="javascript/jquery-2.1.3.js" type="text/javascript" charset="utf8"></script>
+
+<script src="javascript/tab.exam.js" type="text/javascript" charset="utf8"></script>
+<script  src="javascript/idangerous.swiper.min.js" type="text/javascript" charset="utf8"></script>
+<script  src="javascript/colpick.js" type="text/javascript" charset="utf8"></script>
+<script>
+    //tab切换
+    new o_tab().init( "datatable_tab","li","data_dttab_con_","on","",1,"" );
+    //轮播图
+    var mySwiper = new Swiper('.swiper-container',{
+        pagination: '.pagination1',
+        loop:true,
+        grabCursor: true,
+        paginationClickable: true
+    });
+
+    var mySwiper1= new Swiper('.swiper-container-1',{
+        pagination: '.pagination2',
+        loop:true,
+        grabCursor: true,
+        paginationClickable: true
+    });
+    var mySwiper2= new Swiper('.swiper-container-2',{
+        pagination: '.pagination3',
+        loop:true,
+        grabCursor: true,
+        paginationClickable: true
+    });
+    var mySwiper3= new Swiper('.swiper-container-3',{
+        pagination: '.pagination4',
+        loop:true,
+        grabCursor: true,
+        paginationClickable: true
+    });
+    var mySwiper4= new Swiper('.swiper-container-4',{
+        pagination: '.pagination5',
+        loop:true,
+        grabCursor: true,
+        paginationClickable: true
+    });
+    var mySwiper5= new Swiper('.swiper-container-5',{
+//                        pagination: '.pagination6',
+//                        loop:true,
+        grabCursor: true,
+//                        paginationClickable: true
+    });
+    $('.arrow-left').on('click', function(e){
+        e.preventDefault();
+        mySwiper.swipePrev();
+        mySwiper1.swipePrev();
+        mySwiper2.swipePrev();
+        mySwiper3.swipePrev();
+        mySwiper4.swipePrev();
+//                        mySwiper5.swipePrev()
+    });
+    $('.arrow-right').on('click', function(e){
+        e.preventDefault();
+        mySwiper.swipeNext();
+        mySwiper1.swipeNext();
+        mySwiper2.swipeNext();
+        mySwiper3.swipeNext();
+        mySwiper4.swipeNext();
+//                        mySwiper5.swipeNext()
+    });
+    //自动取色器
+    $('.colorPicker-put').colpick({
+        flat:true,
+        colorScheme:'light', //dark
+        layout:'rgbhex',//hex、rgbhex、full
+        submit:1,
+        onChange:function(hsb,hex,rgb,el,bySetColor) {
+            $('.callback-color-picker').css({'border-right':'37px solid #'+hex});
+            $('.callback-color-picker').val('#'+hex);
+            // Fill the text box just if the color was set using the picker, and not the colpickSetColor function.
+            if(!bySetColor) $('.color-sma-7').val('#'+hex);
+        }
+    });
+    $('.device-colorpicker .swiper-slide>div>span').click(function(){
+        var colorval=$(this).css('background-color');
+        $('.callback-color-picker').css({'border-right':'37px solid '+colorval});
+        $('.callback-color-picker').val(colorval);
+    });
+    $('input.callback-color-picker').click(function(){
+        $('.color-picker-box').slideToggle();
+    });
+    //点击页面其他地方该div隐藏
+    function stopPropagation(e) {
+        if (e.stopPropagation)
+            e.stopPropagation();
+        else
+            e.cancelBubble = true;
+    }
+    $(document).bind('click',function(){
+        $('.color-picker-box').css('display','none');
+    });
+    $('.colorpicker-div').bind('click',function(e){
+        stopPropagation(e);
+    });
+</script>
+</body>
+</html>
