@@ -4163,6 +4163,8 @@ dl.doing.half:before {width:50%;background: #227dc5;content:"";height: 5px;displ
 	border: 1px solid transparent;
 	border: none;
 	padding: 0;
+	margin: 0 auto;
+	max-width: 1200px;
 }
 .panel-heading {
 	border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
